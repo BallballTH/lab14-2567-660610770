@@ -9,3 +9,9 @@ export interface ReviewProps {
   rating: number;
   comment: string;
 }
+
+export interface FooterProps {
+  year: string;
+  name: string;
+  studentId: string;
+}

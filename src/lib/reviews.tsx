@@ -8,7 +8,7 @@ export const Reviews: ReviewProps[] = [
         comment: 'Best pizza in this world. I give you X score.',
     },
     {
-        id: 1,
+        id: 2,
         name: 'Mark Zuck',
         rating: 4,
         comment: 'My favourite part is pepperoni',
