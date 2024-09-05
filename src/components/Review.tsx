@@ -3,16 +3,15 @@ import { ReviewProps } from '@lib/types';
 export default function Review({id, name, rating, comment} :ReviewProps) {
   return (
     <>
+      
+      <Divider my="md" />
 
-        <Divider my="md" />
+      <Group justify="center" ta="center">
+        <Title order={4} > {name} </Title>
+        <Rating value={rating} readOnly />
+      </Group>
 
-        <Group justify="center">
-         <Title order={4} > {name} </Title>
-         <Rating value={rating} fractions={2} readOnly />
-        </Group>
-
-        <Text c="dimmed" size="sm">{comment}</Text>
-
+      <Text c="dimmed" size="sm" ta="center" >{comment}</Text>
     </>
   )
 }

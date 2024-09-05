@@ -13,8 +13,6 @@ export default function Home() {
     <Container size="600px">
       <AddReview/>
 
-      <Text ta="center" my="sm">
-        
         {Reviews.map((review) => (
           <Review 
             key = {review.id}
@@ -23,9 +21,8 @@ export default function Home() {
         ))}
 
         <Pagnigation/>
-        <Footer/>
 
-      </Text>
+        <Footer/>
     </Container>
   );
 }
